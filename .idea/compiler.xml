@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dmybaits-spring-boot-starter" />
+        <module name="spring_quickdemo" />
+        <module name="spring_mybatis" />
+        <module name="spring_create_manual" />
+        <module name="spring_register" />
+        <module name="big-event" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dmybatis-spring-boot-autoconfigu" target="1.8" />
+      <module name="dmybatis-spring-boot-starter" target="17" />
+      <module name="spring_quick_start" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="big-event" options="-parameters" />
+      <module name="spring_create_manual" options="-parameters" />
+      <module name="spring_mybatis" options="-parameters" />
+      <module name="spring_quick_start" options="-parameters" />
+      <module name="spring_quickdemo" options="-parameters" />
+      <module name="spring_register" options="-parameters" />
+    </option>
+  </component>
+</project>
