@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.wineky.pojo.Result;
 import org.wineky.utils.JwtUtil;
+import org.wineky.utils.ThreadLocalUtil;
 
 import java.util.Map;
 
@@ -17,6 +18,7 @@ public class LoginInterceptors implements HandlerInterceptor {
         String token = request.getHeader("Authorization");
         try {
             Map<String,Object> claims = JwtUtil.parseToken(token);
+            ThreadLocalUtil.set(claims);
             //claims解析成功 放行
             return true;
         } catch (Exception e) {
