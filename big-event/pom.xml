@@ -63,5 +63,14 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-test</artifactId>
       </dependency>
+<!--       分页查询坐标-->
+      <!-- 分页插件pagehelper -->
+      <dependency>
+          <groupId>com.github.pagehelper</groupId>
+          <artifactId>pagehelper-spring-boot-starter</artifactId>
+          <version>1.4.6</version>
+      </dependency>
+      <!-- 分页插件pagehelper -->
+
   </dependencies>
 </project>
